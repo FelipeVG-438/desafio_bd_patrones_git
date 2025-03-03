@@ -1,5 +1,5 @@
-# Decorator
 from abc import ABC, abstractmethod
+# Se hace la gestion de los estudiantes basado en la informacion deseada
 
 class Sistema(ABC):
     @abstractmethod

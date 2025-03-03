@@ -43,14 +43,14 @@ class Reportes:
     def __init__(self, builder):
         self.builder = builder
     
-    def rendimientoEstudiantil(self):
+    def rendimientoEstudiantil(self): # arma reporte con informacion de alumnos y calificaciones
         return self.builder.alumno().calificaciones().get_product()
     
-    def estadisticasCursos(self):
+    def estadisticasCursos(self): # arma reporte con informacion de profesores y cursos
         return self.builder.curso().calificaciones().get_product()
     
-    def progresoProgramas(self):
+    def progresoProgramas(self): # arma reporte con informacion de parciales y programas
         return self.builder.programa().parcial().get_product()
     
-    def listadoInscritos(self):
+    def listadoInscritos(self): # arma reporte con informacion de alumnos y cursos
         return self.builder.alumno().curso().get_product()
